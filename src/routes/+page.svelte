@@ -1,11 +1,20 @@
+<script>
+	import Logo from "$lib/components/Logo.svelte";
+    let engine = "/img/engine.png"
+</script>
 <div class="content">
     <div>
-        <img src="/img/turbodev.svg" alt="Turbodev Logo">
+        <div class="engine">
+            <!-- <img src={engine} alt="" width="520" height="520"> -->
+            <div class="logo">
+                <Logo />
+            </div>
+        </div>
         <h1>
             Turbodev.app
         </h1>
         <p>
-            Web App, Ecommerce, Mobile
+            web, e-commerce, mobile
         </p>
     </div>
 </div>
@@ -27,6 +36,10 @@
     p {
         font-size: 1.75rem;
     }
+    /* img{
+        width: 300px;
+        height: auto;
+    } */
     .content {
         width: 100vw;
         height: 100vh;
@@ -35,4 +48,18 @@
         justify-content: center;
         padding: .5rem;
     }
+    /*
+    .engine {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top: 0px;
+        left: -25px;
+        z-index: 1;
+    } */
 </style>
