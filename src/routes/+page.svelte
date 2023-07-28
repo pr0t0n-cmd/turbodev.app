@@ -20,7 +20,7 @@
         margin-bottom: 2.5rem;
     }
     p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .content {
         width: 100vw;
@@ -28,5 +28,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: .5rem;
     }
 </style>
