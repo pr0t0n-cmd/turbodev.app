@@ -16,11 +16,11 @@
         text-align: center;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 2.5rem;
     }
     p {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .content {
         width: 100vw;
