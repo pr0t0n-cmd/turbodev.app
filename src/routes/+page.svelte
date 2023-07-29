@@ -25,6 +25,7 @@
             </div>
             <div class="orb"></div>
         </div>
+        
         <h1 class="turbodev-app" class:light={mode === "light"}>
             <span>T</span>
             <span>U</span>
@@ -39,6 +40,7 @@
             <span>P</span>
             <span>P</span>
         </h1>
+        <h2 class="font-bold underline text-white">Loading...</h2>
         <p class:light={mode === "light"}>
             web, e-commerce, mobile
         </p>
@@ -60,7 +62,6 @@
 
     h1 {
         font-size: 2.75rem;
-        margin-bottom: 1rem;
     }
     p {
         font-size: 1.75rem;
