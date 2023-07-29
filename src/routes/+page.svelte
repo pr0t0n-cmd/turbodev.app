@@ -17,7 +17,7 @@
 <div class="content" class:contentLight={mode === "light"}>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div on:click={toggleMode}>
+    <div class="container" on:click={toggleMode}>
         <div class="engine">
             <!-- <img src={engine} alt="" width="520" height="520"> -->
             <div class="logo">
@@ -26,7 +26,7 @@
             <div class="orb"></div>
         </div>
         <h1 class:light={mode === "light"}>
-            Turbodev.app
+            TURBODEV.APP
         </h1>
         <p class:light={mode === "light"}>
             web, e-commerce, mobile
@@ -68,9 +68,14 @@
         justify-content: center;
         padding: .5rem;
     }
-
     .contentLight{
         background-color: #fff !important;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .orb{
         position: absolute;
