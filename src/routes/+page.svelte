@@ -120,6 +120,7 @@
         display: inline-block;
         opacity: 0;
         animation: slideDown .75s forwards;
+        letter-spacing: -7.5px;
     }
     @keyframes slideDown {
         to {
