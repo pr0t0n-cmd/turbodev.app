@@ -25,8 +25,7 @@
             </div>
             <div class="orb"></div>
         </div>
-        
-        <h1 class="turbodev-app" class:light={mode === "light"}>
+        <h1 class="turbodev-app" class:light={mode === "light" ? light : dark}>
             <span>T</span>
             <span>U</span>
             <span>R</span>
@@ -40,7 +39,9 @@
             <span>P</span>
             <span>P</span>
         </h1>
-        <h2 class="font-bold underline text-white">Loading...</h2>
+        <h3 class="text-center text-2xl" class:light={mode === "light"}>
+            <span>Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
+        </h3>
         <p class:light={mode === "light"}>
             web, e-commerce, mobile
         </p>
@@ -55,9 +56,12 @@
         text-align: center;
         text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05),
     }
+    span{
+        color: #fff;
+    }
 
     .light{
-        color: #000 !important;
+        color: #fff !important;
     }
 
     h1 {
@@ -141,4 +145,27 @@
     .turbodev-app span:nth-child(10) { animation-delay: calc(0.1s * 18); }
     .turbodev-app span:nth-child(11) { animation-delay: calc(0.1s * 19); }
     .turbodev-app span:nth-child(12) { animation-delay: calc(0.1s * 20); }
+
+    .dot {
+        opacity: 0;
+        animation: fadeInOut 1.5s infinite;
+        color: #fff;
+    }
+
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+    .dot:nth-child(2) {
+        animation-delay: .25s;
+    }
+
+    .dot:nth-child(3) {
+        animation-delay: .5s;
+    }
 </style>
