@@ -98,7 +98,7 @@
         background-color: #fff;
         box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px rgba(0, 255, 94, 0.75);
         transform: translateX(-50%) translateY(-105%);
-        animation: heartbeat 2s infinite;
+        animation: heartbeat 1s infinite;
     }
 
     @keyframes heartbeat {
@@ -106,7 +106,7 @@
         transform: translateX(-50%) translateY(-105%) scale(1);
     }
     50% {
-        transform: translateX(-50%) translateY(-105%) scale(0.8);
+        transform: translateX(-50%) translateY(-105%) scale(0.5);
     }
     
     }
