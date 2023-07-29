@@ -25,7 +25,7 @@
             </div>
             <div class="orb"></div>
         </div>
-        <h1 class="turbodev-app" class:light={mode === "light" ? light : dark}>
+        <h1 class="turbodev-app font-bold" class:light={mode === "light" ? light : dark}>
             <span>T</span>
             <span>U</span>
             <span>R</span>
