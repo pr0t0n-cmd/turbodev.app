@@ -25,8 +25,19 @@
             </div>
             <div class="orb"></div>
         </div>
-        <h1 class:light={mode === "light"}>
-            TURBODEV.APP
+        <h1 class="turbodev-app" class:light={mode === "light"}>
+            <span>T</span>
+            <span>U</span>
+            <span>R</span>
+            <span>B</span>
+            <span>O</span>
+            <span>D</span>
+            <span>E</span>
+            <span>V</span>
+            <span>.</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
         </h1>
         <p class:light={mode === "light"}>
             web, e-commerce, mobile
@@ -102,4 +113,30 @@
     .engine{
         position: relative;
     }
+
+    .turbodev-app span {
+        transform: translateY(-10px);
+        margin: 0;
+        display: inline-block;
+        opacity: 0;
+        animation: slideDown .75s forwards;
+    }
+    @keyframes slideDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .turbodev-app span:nth-child(1) { animation-delay: calc(0.1s * 9); }
+    .turbodev-app span:nth-child(2) { animation-delay: calc(0.1s * 10); }
+    .turbodev-app span:nth-child(3) { animation-delay: calc(0.1s * 11); }
+    .turbodev-app span:nth-child(4) { animation-delay: calc(0.1s * 12); }
+    .turbodev-app span:nth-child(5) { animation-delay: calc(0.1s * 13); }
+    .turbodev-app span:nth-child(6) { animation-delay: calc(0.1s * 14); }
+    .turbodev-app span:nth-child(7) { animation-delay: calc(0.1s * 15); }
+    .turbodev-app span:nth-child(8) { animation-delay: calc(0.1s * 16); }
+    .turbodev-app span:nth-child(9) { animation-delay: calc(0.1s * 17); }
+    .turbodev-app span:nth-child(10) { animation-delay: calc(0.1s * 18); }
+    .turbodev-app span:nth-child(11) { animation-delay: calc(0.1s * 19); }
+    .turbodev-app span:nth-child(12) { animation-delay: calc(0.1s * 20); }
 </style>
