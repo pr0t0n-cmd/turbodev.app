@@ -1,5 +1,6 @@
 <script>
 	import Logo from "$lib/components/Logo.svelte";
+    import GooeyButton from "$lib/components/GooeyButton/GooeyButton.svelte";
     let mode = "dark";
     let light = "#000";
     let dark = "#fff";
@@ -17,7 +18,7 @@
 <div class="content" class:contentLight={mode === "light"}>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div class="container" on:click={toggleMode}>
+    <div class="container">
         <div class="engine">
             <!-- <img src={engine} alt="" width="520" height="520"> -->
             <div class="logo">
@@ -45,6 +46,7 @@
         <p class:light={mode === "light"}>
             web, e-commerce, mobile
         </p>
+        <!-- <GooeyButton /> -->
     </div>
 </div>
 
@@ -78,7 +80,7 @@
         cursor: pointer;
         background-color: #000;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -117,6 +119,14 @@
     }
     .engine{
         position: relative;
+        animation: tilt-n-move-shaking 0.25s infinite;
+    }
+    @keyframes tilt-n-move-shaking {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(1px, 2px) rotate(1deg); }
+        50% { transform: translate(0, 0) rotate(0eg); }
+        75% { transform: translate(-2px, 2px) rotate(-1deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
     }
 
     .turbodev-app span {
@@ -168,4 +178,5 @@
     .dot:nth-child(3) {
         animation-delay: .5s;
     }
+
 </style>
